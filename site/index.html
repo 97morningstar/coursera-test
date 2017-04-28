@@ -1,115 +1,39 @@
-* {
-		/*box-sizing: border-box;*/
-		margin: 0;
-		padding: 0;
-	}
-
-    h1{
-    	text-align:center;
-    	margin-top: 5%;
-    	margin-bottom: 15px;
-    	font-family: "Franklin Gothic Medium";
-    }
-
-	div{
-  
-		background: gray;
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width+device-width, initial-scale=1">
+	<title>
 		
-	    border: 1px solid black;
-      
-      overflow: hidden;
-  
-     /* text-align: center;*/
-     
-        margin: 10px;
+	</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-	}
-	p.texto{
-		display: inline-table;
+</head>
+<body>
+<h1>Our Menu</h1>
 
-		margin: 10px;
-       font-size: 20px;
-      padding: 10px;
-  
-        text-align: justify;
-        font-family: "Monotype Corsiva";
-	}
-	
-/*
-/*Desktop version >992px*/
+<div id="container">
 
-@media (min-width: 992px){
-.widthLG3 {
-		float: left;
-	}
-	.widthLG3 {
-		width: 30%;
+<div class="widthLG3 widthMD6 pop titu">
 
-	}
-	#left{
-display:inline-block;
-    margin-right:20px;
-}
-#cent {
-  display:inline-block;
-  margin-right:20px;
-}
-.right {
-display:inline-block;
- margin-right:20px;
-}
-}
-@media (min-width: 768px) and (max-width: 991px){
-.widthMD6{
-	float: left;
-}
-.pop{
-	width: 45%;
-}
-.hello{
-	width: 93%;
-}
+<p id="t1">Chicken</p>
 
-}
-
-@media (max-width: 767px){
-	.widthMD6{
-		margin: 10px;
-	}
-}
-
-#t1
-{
-	width: 70px;
-	height: 20px;
-background: #1EBCD5;
-float: right;
- border: 1px solid black;
-}
-#t2
-{
-	width: 70px;
-	height: 20px;
-background: #E56C19;
-float: right;
- border: 1px solid black;
-}
-#t3
-{
-	width: 70px;
-	height:20px;
-background: #C019E5;
-float: right;
- border: 1px solid black;
-}
+<p class="texto" id="left"> Lorem ipsum dolor sit amet, et sed phaedrum conclusionemque, eros elit facilis eu vis, mel in dicat audiam iriure. Duo ei falli bonorum imperdiet. Te vel sonet iuvaret, cu admodum ceteros splendide duo. Nam ea tota tritani lobortis. Case porro delectus duo ut, ei vim inani nemore fierent, in duo novum quidam conclusionemque.</p>
+</div>
 
 
-#container{
-	background: blue;
-            text-align: center;
-	width: 100%;
-	background: white;
-	border: none;
-	text-align: center;
-}
 
+<div class="widthLG3 widthMD6 pop titu">
+<p id="t2">Beef</p>
+<p class="texto" id="cent"> Lorem ipsum dolor sit amet, et sed phaedrum conclusionemque, eros elit facilis eu vis, mel in dicat audiam iriure. Duo ei falli bonorum imperdiet. Te vel sonet iuvaret, cu admodum ceteros splendide duo. Nam ea tota tritani lobortis. Case porro delectus duo ut, ei vim inani nemore fierent, in duo novum quidam conclusionemque.</p>
+</div>
+
+
+<div class="widthLG3 widthMD6 hello titu">
+<p id="t3">Sushi</p>
+
+<p class="texto" id="right"> Lorem ipsum dolor sit amet, et sed phaedrum conclusionemque, eros elit facilis eu vis, mel in dicat audiam iriure. Duo ei falli bonorum imperdiet. Te vel sonet iuvaret, cu admodum ceteros splendide duo. Nam ea tota tritani lobortis. Case porro delectus duo ut, ei vim inani nemore fierent, in duo novum quidam conclusionemque.</p>
+</div>
+</div>
+</body>
+</html>
