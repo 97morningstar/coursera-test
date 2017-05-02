@@ -54,7 +54,7 @@ display:inline-block;
   display:inline-block;
   margin-right:20px;
 }
-.right {
+#right {
 display:inline-block;
  margin-right:20px;
 }
@@ -67,7 +67,7 @@ display:inline-block;
 	width: 45%;
 }
 .hello{
-	width: 93%;
+	width: 92.4%;
 }
 
 }
