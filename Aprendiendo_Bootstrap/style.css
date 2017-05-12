@@ -1,0 +1,140 @@
+header{
+	background: black;
+	color: white;
+}
+
+div.num1{
+	background: gray;
+}
+
+aside{
+	background: orange;
+}
+
+.pop{
+	background: brown;
+	color:orange;
+}
+
+footer{
+background: black;
+color: white;
+}
+
+.yo{
+	
+	padding: 10px;
+	background: yellow;
+	color: red;
+}
+
+.op{
+	background: blue;
+}
+
+h2.gridi{
+	margin-top: 186px;
+}
+
+#yoo{
+position: relative;
+left: 15%;
+background: purple;
+color: white;
+padding:10px;
+}
+
+ul{
+	list-style: none;
+}
+
+header nav.uno ul li a{
+	color: white;
+}
+
+h1{
+	font-size: 50px;
+
+position: relative;
+left: 25%;
+}
+
+.num1{
+margin-top: 0px;
+}
+
+
+header{
+	position: fixed;
+	z-index:1;
+	width: 100%;
+}
+
+nav.uno ul li a{
+text-decoration: none;
+float: left;
+padding-right: 20px;
+padding-left: 20px;
+font-size: 30px;
+}
+
+
+nav.uno{
+	margin-top: 20px;
+}
+
+nav.uno ul li a:focus {
+    color: black !important;
+	text-decoration:none !important;
+	background: white;
+}
+
+
+nav.uno ul li a:hover{
+color: black;
+	background: white;
+text-decoration: none;
+}
+
+.pop, .op{
+	padding-top: 10px;
+}
+.op{
+	color: yellow;
+}
+
+.pad{
+	margin-top: 165px
+}
+
+
+/*estilos del contenido*/
+ul.contenido{
+	margin:30px auto;
+}
+
+
+ul.contenido li a{
+	color: black;
+	font-size: 30px;
+}
+
+
+ul.contenido li a:focus{
+	text-decoration: none;
+
+}
+
+ul.contenido li a:hover{
+	text-decoration: none;
+	color: #4A235A;
+	border-bottom:  5px solid #4A235A
+}
+
+
+
+ article.con p{
+ 	font-size: 30px;
+ }
+
+  
