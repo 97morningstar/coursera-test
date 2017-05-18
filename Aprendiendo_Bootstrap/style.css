@@ -33,12 +33,14 @@ color: white;
 }
 
 h2.gridi{
-	margin-top: 186px;
+	margin-top: 165px;
 }
 
 #yoo{
 position: relative;
-left: 15%;
+
+left: 10.85%;
+
 background: purple;
 color: white;
 padding:10px;
@@ -54,7 +56,6 @@ header nav.uno ul li a{
 
 h1{
 	font-size: 50px;
-
 position: relative;
 left: 25%;
 }
@@ -66,7 +67,7 @@ margin-top: 0px;
 
 header{
 	position: fixed;
-	z-index:1;
+	z-index:9;
 	width: 100%;
 }
 
@@ -137,4 +138,37 @@ ul.contenido li a:hover{
  	font-size: 30px;
  }
 
-  
+ 
+@media (min-width: 769px) and (max-width: 1199px){
+div.num1{
+	width: 100%;
+}
+
+
+}
+
+@media (max-width: 768px){
+
+
+.abajo{
+margin:0 10px;
+}
+
+
+.pad{
+	margin-top: 450px !important;
+}
+
+
+#yoo{
+	margin-top: 0px;
+margin-left: 0px;
+position: absolute;
+right: 0px;
+left: 0px;
+top: 300px;
+background: purple;
+color: white;
+padding:10px;
+}
+}
