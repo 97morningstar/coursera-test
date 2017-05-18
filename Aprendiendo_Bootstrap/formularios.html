@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+
+<body>
+
+<header>
+	<div class="container">
+		<h1>BOOTSTRAP por youtube.com</h1>
+		<h4>Aca estoy eprendiendo un poco sobre como funciona</h4>
+
+
+		<nav class="uno">
+	<ul>
+		<li><a href="index.html">Inicio</a>
+            
+		</li>
+		<li ><a style="background: white; color: black;" href="Contenido.html">Contenido</a>
+		</li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Otra cosa</a></li>
+		<li><a href="contactos.html">Contactos</a></li>
+	</ul>
+</nav>
+	</div>
+</header>
+
+
+
+
+
+
+<div class="container abajo">
+<div class="row pad">
+<h2 style="font-size: 40px;" id="yoo">Formularios</h2>
+
+<form action="" class="">
+
+<div class="form-group">
+	<label for="nombre" class="control-label">Nombre: </label>
+<input class="form-control" type="text" name="" id="nombre" placeholder="Escriba el nombre aqui...">
+</div>
+
+<div class="form-group">
+<label for="opcion">Elija una opcion</label>
+<select class="form-control" id="opcion" >
+	<option value="">Opcion #1</option>
+	<option value="">Opcion #2</option>
+	<option value="">Opcion #3</option>
+	<option value="">Opcion #4</option>
+	<option value="">Opcion #5</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="mensaje">Mensaje: </label>
+<textarea class="form-control" id="mensaje" placeholder="Escriba su mensaje aqui..." disabled></textarea>
+</div>
+
+<div class="form-group">
+
+<label for="archivo">Archivo: </label>
+<input type="file" id="archivo" name="">
+<p class="help-block">NO mas de 50 MG</p>
+
+</div>
+
+
+<button class="btn btn-primary" disabled>Enviar:</button>
+
+
+
+
+</form>
+
+
+<br>
+<h3>Controles a los cuales se le puede aplicar la clase form-control</h3>
+<ul>
+	<li>text</li>
+	<li>password</li>
+	<li>datetime</li>
+	<li>datetime-local</li>
+	<li>date</li>
+	<li>month</li>
+	<li>time</li>
+	<li>week</li>
+	<li>number</li>
+	<li>email</li>
+	<li>url</li>
+	<li>search</li>
+	<li>tel</li>
+	<li>color</li>
+
+</ul>
+
+<br>
+<h3>Formularios en linea con clase form-inline</h3>
+<h3>Con label con clase sr-only que hace que desaparezca</h3>
+<form action="" class="form-inline">
+	<p>Cuando se hace pequeño de pone enfrente, no usar input-group</p>
+<div class="form-group">
+	<label for="nombre">Nombre: </label>
+<input class="form-control" type="text" name="" id="nombre" placeholder="Escriba el nombre aqui...">
+</div>
+
+
+
+
+<div class="form-group">
+	<div class="" >
+		<label class="sr-only" for="correo">Correo:</label>
+		<div class="input-group">
+		<span class="input-group-addon">@</span>
+		<input class="form-control" id="correo" type="text" placeholder="correo..." name="" >
+</div>
+	</div>
+</div>
+
+<div class="checkbox">
+	<label>
+		<input type="checkbox" name=""> Recuerdame
+	</label>
+</div>
+
+<button class="btn btn-primary">Enviar</button>
+</form>
+<br>
+
+<h3>Usando el sitema de columnas de bootstrap</h3>
+<form action="" class="form-horizontal">
+	<div class="form-group">
+		<label for="nombre" class="control-label col-md-2">Nombre: </label>
+		<div class="col-md-10">
+		<input class="form-control" type="text" id="nombre" name="" placeholder="Escriba aqui el nombre...">
+		</div>
+	</div>
+
+<div class="form-group">
+		<label for="nombre" class="control-label col-md-2">Nombre: </label>
+		<div class="col-md-10">
+     		<p class="form-control-static">Elisa Martinez</p>		
+		</div>
+	</div>
+
+<div class="form-group">
+		<label for="correo" class="control-label col-md-2">Correo: </label>
+		<div class="col-md-10">
+		<input class="form-control" type="email" id="correo" name="" placeholder="Escriba aqui su correo...">
+		</div>
+	</div>
+
+
+<div class="form-group">
+	<div class="checkbox col-md-2 col-md-offset-2">
+		<label>
+			<input type="checkbox" name="">Recuerdame
+		</label>
+	</div>
+</div>
+
+<div class="form-group">
+	<div class="col-md-2 col-md-offset-2">
+		<button class="btn btn-primary">Enviar</button>
+	</div>
+</div>
+
+
+
+</form>
+<br>
+
+
+</div>
+</div>
+
+
+<!--Formularios por aca-->
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
