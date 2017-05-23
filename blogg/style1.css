@@ -1,0 +1,73 @@
+nav.header1{
+	background:#4A235A;
+}
+
+nav li a{
+	 color: #FFFFFF !important;
+}
+
+a.navbar-brand{
+	color: #FFFFFF !important;
+}
+
+nav li a:hover{
+	background: #70288D !important;
+}
+
+span.icon{
+font-size: 50px;
+color: white;
+}
+
+div.colorr{
+	text-align: center;
+	background:#B600FF;
+width: 100%;
+}
+
+@media (min-width: 1200px){
+div#carro{
+	width: 100%;
+	height: 500px;
+}
+}
+
+
+
+
+@media (max-width: 991px){
+div.colorr{
+	text-align: center;
+	background:#B600FF;
+width: 100%;
+height: 40px;
+}
+span.icon{
+font-size: 30px;
+color: white;
+}
+
+#alto1{
+
+		width: 100%;
+	height: 300px;
+}
+#alto2{
+	
+		width: 100%;
+	height: 300px;
+}
+#alto3{
+
+		width: 100%;
+	height: 300px;
+}
+/*
+div#carro{
+	width: 100%;
+	height: 1em;
+}*/
+
+}
+
+
