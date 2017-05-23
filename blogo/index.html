@@ -62,14 +62,10 @@
                     <!-- Contenedor de los slides -->
                   <div class="carousel-inner" role="listbox" width="15400" height="500">
                       <div class="item active">
-                      
-                    
-                        <img src="http://lorempixel.com/1500/500/cats/1" class="img-responsive" id="alto1" width="1500" height="500">
-                     
-                     
+                        <img src="http://lorempixel.com/1500/500/cats/1" class="img-responsive" id="alto2" width="1500" height="500">
                         <div class="carousel-caption hidden-xs hidden-sm">
-                          <h3>Gatos <3 </h3>
-                          <p>Los animales mas tiernos</p>
+                          <h3>Gatos <3</h3>
+                           <p>Los animales mas tiernos</p>
                         </div>
                       </div>
 
@@ -165,8 +161,22 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
 
+<script type="text/javascript">
+// Activate Carousel
+$("#myCarousel").carousel();
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+</script>
+
+<script src="js/jquery-3.1.1.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
