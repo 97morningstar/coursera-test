@@ -148,13 +148,27 @@ Your user agent does not support the HTML5 Canvas element.
 
 
 
-function luna(){
+var f = 1;
+function funcion1() {
 document.getElementById("pp").style.zIndex = 1;
+f = 2;
 }
 
-function lunaa(){
+function funcion2() {
 document.getElementById("pp").style.zIndex = 6;
+f = 1;
 }
+
+
+setInterval(function(){
+
+if (f===1) {
+funcion1();
+
+} else {
+funcion2();
+}
+},1000);
 
 </script>
 
