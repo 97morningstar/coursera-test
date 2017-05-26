@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Inventando con canvas</title>
+<style>
+	
+body{
+
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+
+.pop{
+background-repeat: no-repeat;
+
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0A0322,#0A0322, #150840,#15044F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* Standard syntax */
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#sol{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 9;
+}
+
+#tierr{
+position: absolute;
+	top: 200px;
+	left: 400px;
+z-index: 5;
+}
+#luna{
+position: absolute;
+width: 150px;
+	top: 300px;
+	left: 400px;
+	z-index: 10;
+
+}
+/*
+#tierr{
+ transition-property: top;
+ transition-duration: 0.3s;
+}
+
+#tierr:hover, #tierr:focus {
+top:190px;
+}*/
+/*
+#luna{
+ transition-property: top;
+ transition-duration: 0.3s;
+
+}
+#luna:hover, #luna:focus {
+top:140px;
+}*/
+
+canvas{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+
+#sol{
+		animation: circle 25s infinite linear;
+}
+
+
+#tierr{
+		animation: circle 20s infinite linear;
+}
+
+@keyframes updown {
+	to { transform: translateX(550px); } 
+}
+figure {
+
+position: absolute;
+width: 150px;
+	top: -40px;
+	left: -200px;
+	z-index: 10;
+	animation: updown 1s infinite ease-in-out alternate;
+}
+#luna {
+	transform-origin: center 100%;
+	animation: circle 2s infinite linear;
+	z-index: 10;
+}
+
+</style>
+
+
+
+
+
+</head>
+<body scrolling="no">
+
+
+
+<div class="pop" ></div>
+
+
+<img src="LLUVTRUESOL (35)o.png" id="sol">
+
+
+
+<figure id="pp">
+	<img src="luna.png" id="luna">
+</figure>
+
+
+
+<img src="tierra.png" id="tierr">
+
+
+
+<canvas id="myCanvas" width=1500 height="800" >
+Your user agent does not support the HTML5 Canvas element.
+</canvas>
+
+
+<script>
+
+
+
+function luna(){
+document.getElementById("pp").style.zIndex = 1;
+}
+
+function lunaa(){
+document.getElementById("pp").style.zIndex = 6;
+}
+
+</script>
+
+
+<script>
+/*
+var tim = setTimeout(pop, 1000);*/
+pop();
+function pop(){
+var myCanvas = document.getElementById("myCanvas");
+var ctx = myCanvas.getContext("2d");
+var w = myCanvas.width, h = myCanvas.height;
+var i = 0;
+do {
+
+
+  ctx.fillStyle = "rgb(255, 255, 255)";
+
+  ctx.beginPath();
+  ctx.arc(w*Math.random(), h*Math.random(),
+          1.5*ran(),
+          0, Math.PI*2, true);
+  ctx.closePath();
+  ctx.fill();
+
+
+} while (++i != 1000);
+
+}
+
+
+function ran(){
+	return Math.random();
+}
+
+
+</script>
+
+
+  
+</body>
+</html>
