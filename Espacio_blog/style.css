@@ -1,0 +1,110 @@
+
+.color{
+	background: #15044F;
+	border-bottom: #15044F;
+	color: white !important;
+}
+
+a.thumb:hover, a.thumb:link{
+text-decoration: none !important;
+}
+
+nav li a{
+	 color: #FFFFFF !important;
+}
+
+a.navbar-brand{
+	color: #FFFFFF !important;
+}
+
+nav li a:hover{
+	background: rgba(47, 5, 178, .3) !important;
+}
+
+.pie{
+	padding: 10px;
+background: #0A0322;
+color: white;
+font-size: 15px;
+}
+
+
+
+
+/*esto aca abajo no sirve para nada*/
+@media(min-width: 1200px){
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px){
+  .pop{
+  	height:  500px !important;
+  }
+
+  #sol{
+	position: absolute;
+	top: 5% !important;
+	left: 5% !important;
+	z-index: 9;
+	width: 20% !important;
+}
+
+#tierr{
+position: absolute;
+	top: 25% !important;
+	left: 20% !important;
+z-index: 5;
+width: 20% !important;
+}
+#luna{
+position: absolute;
+
+top: 170px !important;
+	left: 170px !important;
+	z-index: 10;
+width: 50% !important;
+}
+
+
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+
+#sol{
+		animation: circle 25s infinite linear;
+}
+
+
+#tierr{
+		animation: circle 20s infinite linear;
+}
+
+@keyframes updown { /*550*/
+	to { 
+		transform: translateX(150px) !important; 
+	} 
+}
+
+figure {
+position: absolute;
+width: 150px;
+	top: 40px !important;
+	left: -200px;
+	z-index: 10;
+animation: updown 1s infinite ease-in-out alternate;
+
+}
+#luna {
+
+	transform-origin: center 100% !important;
+	animation: circle 3s infinite linear !important;
+	z-index: 10;
+}
+
+.tituloimg{
+	width: 60px;
+	right: 300px !important;
+}
+
+}

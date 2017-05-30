@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Inventando con canvas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	
+body{
+
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+width: 100%;
+height: 100%;
+
+}
+
+
+.pop{
+background-repeat: no-repeat;
+
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0A0322,#0A0322, #150840,#15044F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0A0322,#0A0322, #150840, #15044F); /* Standard syntax */
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#sol{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 9;
+}
+
+#tierr{
+position: absolute;
+	top: 250px;
+	left: 350px;
+z-index: 5;
+}
+#luna{
+position: absolute;
+width: 150px;
+	top: 300px;
+	left: 400px;
+	z-index: 10;
+
+}
+/*
+#tierr{
+ transition-property: top;
+ transition-duration: 0.3s;
+}
+
+#tierr:hover, #tierr:focus {
+top:190px;
+}*/
+/*
+#luna{
+ transition-property: top;
+ transition-duration: 0.3s;
+
+}
+#luna:hover, #luna:focus {
+top:140px;
+}*/
+/*
+canvas{
+
+ transition-property: top;
+ transition-duration: 0.3s;
+
+}
+
+canvas:hover{
+
+top: 5px;
+
+}*/
+
+
+canvas{
+
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+
+#sol{
+		animation: circle 25s infinite linear;
+}
+
+
+#tierr{
+		animation: circle 20s infinite linear;
+}
+
+@keyframes updown { /*550*/
+	to { transform: translateX(550px); } 
+}
+figure {
+
+position: absolute;
+width: 150px;
+	top: -10px;
+	left: -200px;
+	z-index: 10;
+	animation: updown 1s infinite ease-in-out alternate;
+}
+#luna {
+	transform-origin: center 100%;
+	animation: circle 2s infinite linear;
+	z-index: 10;
+}
+
+
+.titulo, .tituloimg{
+	z-index: 11;
+position: absolute;
+top: 100px;
+}
+
+.titulo{
+	right: 110px;
+}
+.tituloimg{
+	right: 500px;
+}
+
+.titulo{
+	font-family: "impact";
+	font-size: 60px;
+	color: white;
+}
+
+
+</style>
+
+
+
+
+
+</head>
+<body scrolling="no">
+
+
+
+<div class="pop" ></div>
+
+
+<img src="LLUVTRUESOL (35)o.png" id="sol">
+
+
+
+<figure id="pp">
+	<img src="luna.png" id="luna">
+</figure>
+
+
+
+<img src="tierra.png" id="tierr">
+
+
+
+<canvas id="myCanvas" width=1500 height="850" >
+Your user agent does not support the HTML5 Canvas element.
+</canvas>
+
+
+<script>
+
+
+
+var f = 1;
+function funcion1() {
+document.getElementById("pp").style.zIndex = 1;
+f = 2;
+}
+
+function funcion2() {
+document.getElementById("pp").style.zIndex = 6;
+f = 1;
+}
+
+
+setInterval(function(){
+
+if (f===1) {
+funcion1();
+
+} else {
+funcion2();
+}
+},1000);
+
+</script>
+
+
+<script>
+/*
+var tim = setTimeout(pop, 1000);*/
+
+var myCanvas = document.getElementById("myCanvas");
+var ctx = myCanvas.getContext("2d");
+var w = myCanvas.width, h = myCanvas.height;
+var i = 0;
+do {
+
+
+  ctx.fillStyle = "rgb(255, 255, 255)";
+
+  ctx.beginPath();
+  ctx.arc(w*Math.random(), h*Math.random(),
+          1.5*ran(),
+          0, Math.PI*2, true);
+  ctx.closePath();
+  ctx.fill();
+
+ 
+} while (++i != 1000);
+
+
+
+
+
+function ran(){
+	return Math.random();
+}
+
+
+
+
+</script>
+
+
+<!--ACA empiezan los articulos y eso -->
+
+
+<header>
+        <nav class="navbar navbar-default navbar-fixed-top color">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a href="#" class="navbar-brand">Este sitio NO es responsivo, trate y trate pero no funciona simplemente</a>
+            </div>
+              <div class="collapse navbar-collapse" id="navbar-1">
+                  <ul class="nav navbar-nav">
+                     <li><a href="index.html">Menu Principal</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Contactos</a></li>
+                    
+                  </ul>
+
+                  
+                  
+              </div>
+          </div>
+        </nav>
+    </header>
+
+
+<!-- articulos -->
+<br>
+
+
+<h1 class="titulo">Espacio Exterior</h1>
+
+<img class="tituloimg" src="astro5.png">
+
+<div class="miniarticulo" style="width: 500px; position: absolute; top: 580px; right: 110px; background: rgba(47, 5, 178, .3); color: white; padding: 10px; padding-bottom: 0px;">
+<h4>Algo sobre la pagina</h4>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</div>
+
+
+<div class="container-fluid">
+	
+
+<div class="row">
+	
+ <div class="col-md-4" style="display: inline;">
+ 
+ 	<div class="thumbnail">
+ 	<a href="#" class="thumb">
+ 		<img src="800x600 1.jpg">
+    </a>
+ 		<div class="caption">
+ 			<h3>Hermosas imagenes del espacio</h3>
+ 			<p>Aqui puede encontrar hermosas imagenes del espacio exterior tomadas con los mejores telescopios del mundo bla bla bla y por todo eso debe visitar esta pagina es muy bonita bla bla bla: te esperamos</p>
+ 		</div>
+ 	</div>
+ </div>
+
+
+
+ <div class="col-md-4" style="display: inline;">
+
+ 	<div class="thumbnail" >
+ 	 <a href="#" class="thumb">
+ 		<img src="22.jpg">
+ 	</a>
+ 		<div class="caption">
+ 			<h3>Articulo mas visitado bla bla bla</h3>
+ 			<p>Aqui puede encontrar hermosas imagenes del espacio exterior tomadas con los mejores telescopios del mundo bla bla bla y por todo eso debe visitar esta pagina es muy bonita bla bla bla: te esperamos</p>
+ 		</div>
+ 	</div>
+ </div>
+
+ <div class="col-md-4" style="display: inline;">
+ 	<div class="thumbnail" >
+ <a href="#" class="thumb">
+ 		<img src="33.jpg">
+</a>
+ 		<div class="caption">
+ 			<h3>Visite este blog no se por que</h3>
+ 			<p>Aqui puede encontrar hermosas imagenes del espacio exterior tomadas con los mejores telescopios del mundo bla bla bla y por todo eso debe visitar esta pagina es muy bonita bla bla bla: te esperamos</p>
+ 		</div>
+ 	</div>
+ </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+<footer class="pie">
+	<div class="container">
+	<div class="pull-left">
+		<p>
+			Esta pagina ha sido echa  para probar varias cosas <br>
+		    No es responsive todavia pero pronto lo sera <br>
+		    Alguna sugerencia?
+		</p>
+
+		<p>
+			Elisa Martinez Fuentes 5/29/2017
+		</p>
+		</div>
+
+		<div class="pull-right">
+		    <p>Redes sociales</p>
+		    <p>bla bla bla</p>
+		</div>
+
+</div>
+
+	</footer>
+
+
+
+
+  
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
