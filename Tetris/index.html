@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake</title>
+	<script type="text/javascript" src="libraries/p5.js"></script>
+	<script type="text/javascript" src="libraries/p5.dom.js"></script>
+	<script type="text/javascript" src="libraries/p5.sound.js"></script>
+	<script type="text/javascript" src="cosa.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Vibur' rel='stylesheet'>
+<style type="text/css">
+	body{
+		font-family: 'Vibur';
+	}
+
+	div#tetris p{
+		display: block;
+		color: white;
+		font-size: 180px;
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+
+
+	button#start {
+		 outline: none !important;
+		border-radius: 30px;
+		font-size: 80px;
+		background: white;
+		display: block;
+		color:black;
+		font-family: 'Vibur';
+		position: absolute;
+		top: 550px;
+		left: 50px;
+		width: 360px;
+	}
+
+button#start:hover{
+	background: rgba(0, 0, 0, 0.2);
+	color:white;
+}
+
+div#tetris p#puntos{
+		
+	
+		font-size: 50px;
+		
+		display: none;
+		color:white;
+		font-family: 'Vibur';
+		position: absolute;
+		top: 400px;
+		left: 50px;
+		
+	}
+
+	div#punto {
+		font-size: 50px;
+		
+		display: none;
+		color:black;
+		
+		font-family: 'Vibur';
+		position: absolute;
+		top: 50px;
+		left: 550px;
+
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="punto"></div>
+<div id="tetris">
+<p>Tetris</p>
+<p id="puntos">Puntuacion: </p>
+<button id="start" onclick="turnON();">Empezar</button>
+
+
+</div>
+
+
+</body>
+</html>
