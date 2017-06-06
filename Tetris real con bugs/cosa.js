@@ -57,7 +57,7 @@ var s;
 
 
 function setup() {
-createCanvas(450, 1000);
+createCanvas(450, 700);
 frameRate(5);
 
 	for(var i = 0 ; i < 60; i++){
