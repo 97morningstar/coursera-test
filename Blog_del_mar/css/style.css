@@ -381,3 +381,35 @@ margin-right: 0px;
 #sidebar{
 margin-right: 0px;
 }
+
+
+
+/*experimento*/
+.scrollToTop {
+	padding-top: 5px;
+    bottom: 20px;
+    border-radius: 4px;
+    display: none;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bold;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    z-index: 999;
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+ 
+}
+
+
+.scrollToTop {
+   background: rgb(31, 170, 234);
+}
