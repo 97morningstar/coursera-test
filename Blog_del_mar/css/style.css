@@ -1,0 +1,383 @@
+body{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+nav.header1{
+	height: 60px;
+	background: rgba(44, 205, 255, 1);
+	border-bottom: none;
+	border-bottom-left-radius: 4.3em 4em;
+	width: 50%;
+position: relative;
+float: right;
+}
+
+@font-face{
+	font-family: "Dancing Script";
+	src:url('fonts/Dancing_Script/DancingScript-Regular.ttf') format('truetype');
+}
+
+body div#jumbo{
+	width:  100%;
+
+	background: url('../images/tenerife-testata2-1400x500 copia.jpg');
+	background-attachment: fixed; 
+	background-repeat: repeat-x;
+}
+
+body{
+	background: rgba(44, 205, 255, 0.1);
+	/*background-image: url('../images/663842da07d4d768cbc76c4c2c0bc436 copia.png');
+		background-repeat: repeat;*/
+
+}
+
+/*Tamaño grande*/
+@media (min-width: 1200px){
+
+/*estilos del nav*/
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	top: 350px;
+	left: 40px;
+	color: white !important;
+
+}
+
+
+.navbar-default .navbar-nav>li>a{
+	padding-right: 5px !important;
+	color:white;
+}
+div ul li a{
+	
+	font-size: 140%;
+	color:white;
+	vertical-align: middle;
+	/*font-family: 'Dancing Script';*/
+	font-family: 'Dancing Script', cursive;
+}
+
+a#titulo{
+	position: absolute;
+    padding-left: 50px;
+	font-size: 170%;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+
+div#jumbo{
+	background: rgba(31, 170, 234, 0.5);
+	width: 100% !important;
+	height: 500px;
+	position: relative;
+	border-bottom-left-radius: 6em 6em;
+	
+	
+
+
+}
+
+/*circulos*/
+
+
+
+div.circulo-1{
+     position: absolute;
+     width: 250px;
+     height: 500px;
+
+     -moz-border-radius: 50% 50% 50%;
+     -webkit-border-radius: 50%;
+     border-radius:  500px 0px 0px 500px;
+
+     background: #1F4DEA;
+     top:-150px;
+     right:0px;
+
+}
+div.circulo-2{
+     position: absolute;
+     width: 250px;
+     height: 250px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:50px;
+     right:260px;
+}div.circulo-3{
+     position: absolute;
+     width: 150px;
+     height: 150px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:0px;
+     right:520px;
+}div.circulo-4{
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:50px;
+     right:690px;
+}div.circulo-5{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:170px;
+     right:540px;
+}div.circulo-6{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:240px;
+     right:220px;
+}
+
+
+/*articulos de menu inicio*/
+div.articulo2{
+	margin-left: 0px;  /*aqui*/
+
+}
+
+
+
+div.thumbnail{
+	padding: 0px !important;
+	-moz-border-radius: 0;
+     -webkit-border-radius: 0;
+     border-radius: 0;
+     border-color: rgba(44, 205, 255, 1);
+
+}
+
+div#art-1{
+		margin-left: 0px !important;
+}
+div#art-2{
+		margin-left: 0px !important;
+}
+div#art-3{
+		margin-left: 0px !important;
+}
+
+
+iframe{
+	
+	margin-left: 0px !important;
+}
+
+
+/*estilos del footer*//*
+div.f{
+	margin-top: 40px;
+	margin-left: 10px;
+}
+*/
+img#img4{
+	margin-top: 10px;
+}
+
+h4{
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+}
+
+
+
+@media (max-width: 1199px) and (min-width: 992px){
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	top: 200px;
+	left: 70px;
+	color: white !important;
+   font-size: 340% !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+	padding-right: 0px !important;
+	color:white;
+}
+
+div ul.nav li a{
+	padding-right: 0px !important;
+	font-size: 110%;
+	color:white;
+	vertical-align: middle;
+	/*font-family: 'Dancing Script';*/
+	font-family: 'Dancing Script', cursive;
+}
+
+a#titulo{
+	position: absolute;
+    padding-left: 50px;
+	font-size: 150%;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+
+div#jumbo{
+	background: rgba(31, 170, 234, 0.5);
+	width: 100% !important;
+	height: 300px;
+	position: relative;
+	border-bottom-left-radius: 6em 6em;
+	
+}
+div.thumbnail{
+	padding: 0px !important;
+	-moz-border-radius: 0;
+     -webkit-border-radius: 0;
+     border-radius: 0;
+     border-color: rgba(44, 205, 255, 1);
+
+}
+
+/*circulos*/
+
+
+
+div.circulo-1{
+     position: absolute;
+     width: 200px;
+     height: 400px;
+
+     -moz-border-radius: 50% 50% 50%;
+     -webkit-border-radius: 50%;
+     border-radius:  500px 0px 0px 500px;
+
+     background: #1F4DEA;
+     top:-100px;
+     right:0px;
+
+}
+div.circulo-2{
+     position: absolute;
+     width: 150px;
+     height: 150px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:50px;
+     right:230px;
+}div.circulo-3{
+     position: absolute;
+     width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:0px;
+     right:380px;
+}div.circulo-4{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:50px;
+     right:490px;
+}div.circulo-5{
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:130px;
+     right:400px;
+}div.circulo-6{
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1F4DEA;
+     top:200px;
+     right:200px;
+}
+
+
+}
+
+
+@media (max-width: 991px) {
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	top: 100px;
+	left: 60px;
+		color: white !important;
+   font-size: 340% !important;
+}
+
+
+div#jumbo{
+	background: rgba(31, 170, 234, 0.5);
+	width: 100% !important;
+	height: 300px;
+	position: relative;
+	border-bottom-left-radius: 6em 6em;
+	
+}
+div.thumbnail{
+	padding: 0px !important;
+	-moz-border-radius: 0;
+     -webkit-border-radius: 0;
+     border-radius: 0;
+     border-color: rgba(44, 205, 255, 1);
+
+}
+
+
+
+
+}
+
+
+
+
+
+footer{
+background: black;
+color: white;
+width: 100% !important;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#sidebar{
+margin-right: 0px;
+}

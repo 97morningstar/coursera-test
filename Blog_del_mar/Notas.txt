@@ -1,0 +1,3 @@
+Fecha: 7/9/2017   
+Problema a resolver: 1. Que sea responsive para tablets o ipads
+                     2. Que sea responsive para movil
