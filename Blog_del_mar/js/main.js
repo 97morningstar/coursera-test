@@ -27,15 +27,15 @@
 		}
 
 		// close the menu element if the target it´s not the menu element or one of its descendants..
-	
-	}
-		bodyEl.addEventListener( 'click', function(ev) {
+	bodyEl.addEventListener( 'click', function(ev) {
 			var target = ev.target;
 			if( isOpen && target !== openbtn ) {
 				toggleMenu();
 				console.log("se ejecuto");
 			}
 		} );
+	}
+		
 
 	function toggleMenu() {
 		if( isOpen ) {
